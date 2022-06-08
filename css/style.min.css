@@ -1,0 +1,246 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.flexc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flexbtw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.display {
+  display: flex;
+  align-items: center;
+}
+.black {
+  color: black;
+}
+.white {
+  color: white;
+}
+.bgblack {
+  background-color: black;
+}
+.bgwhite {
+  background-color: white;
+}
+.decoration {
+  text-decoration: none;
+}
+.padding {
+  padding-right: 10px;
+}
+.paddingl {
+  padding-left: 10px;
+}
+.curser {
+  cursor: pointer;
+}
+/*==========================================
+=            NAVBAR            =
+==========================================*/
+.colsizeh {
+  width: 300;
+  height: 70px;
+  padding: 0 0 0 0 !important;
+  background: black;
+  border-bottom: 2px solid rgba(186, 186, 186, 0.314);
+  position: relative;
+}
+
+/*==========================================
+=            Bande annonce          =
+==========================================*/
+.col-sizeB {
+  width: 100%;
+  height: 50%;
+  padding: 0 0 0 0 !important;
+  background: black;
+  border-top: 2px solid rgba(186, 186, 186, 0.314);
+  border-bottom: 2px solid rgba(186, 186, 186, 0.314);
+  position: relative;
+}
+.bd {
+  display: flex;
+  margin: 0 auto;
+}
+
+/*==================================
+=            Kouros          =
+==================================*/
+.placementvideo {
+}
+.background-colorblack {
+  border-radius: ;
+  background-color: ;
+}
+/*==================================
+=            RESPONSIVE            =
+==================================*/
+
+/*==========================================
+=            BANDEROLE           =
+==========================================*/
+.col-size {
+  width: 300;
+  height: 90px;
+  padding: 0 0 0 0 !important;
+  background: black;
+  border-top: 2px solid rgba(186, 186, 186, 0.314);
+  border-bottom: 2px solid rgba(186, 186, 186, 0.314);
+  position: relative;
+}
+.col-size-2 {
+  width: 300px;
+  height: 88px;
+  padding: 0 0 0s 0 !important;
+  background: black;
+  border-right: 2px solid rgba(186, 186, 186, 0.314);
+  border-bottom: 2px solid rgba(186, 186, 186, 0.314);
+}
+.col-size-2 p {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  right: 300;
+  left: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+.marque {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 300px;
+  display: flex;
+  font-size: 50px;
+  color: #fff;
+  -webkit-text-stroke: 4px white;
+}
+.marque-content {
+  text-transform: uppercase;
+  text-transform: color 0.2s;
+}
+/*==========================================
+=            FOOTER          =
+==========================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: black;
+  padding: 70px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #d000fe;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #fff;
+  background-color: #d000fe;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
