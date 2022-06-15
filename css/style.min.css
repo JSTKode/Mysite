@@ -82,20 +82,55 @@ html {
   border-top: 2px solid rgba(186, 186, 186, 0.314);
   border-bottom: 2px solid rgba(186, 186, 186, 0.314);
   position: relative;
+  
 }
+.blur{}
 .bd {
   display: flex;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+}
+#preloader {
+  position: relative;
+  float: right;
+  margin-top: -27%;
+  top: 0;
+  left: ;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
 }
 
-/*==================================
-=            Kouros          =
-==================================*/
-.placementvideo {
+.wavy {
+  position: relative;
+  -webkit-box-reflect: below -18px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
 }
-.background-colorblack {
-  border-radius: ;
-  background-color: ;
+
+.wavy span {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-shadow: 0 0 3px #fff, 0 0 7px #fff, 0 0 11px #d000fe, 0 0 15px #d000fe,
+    0 0 19px #d000fe, 0 0 23px #d000fe;
+  animation: wavy 1s infinite;
+  animation-delay: calc(0.1s * var(--index));
+}
+
+/* Let's create the bouncing animation */
+@keyframes wavy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-18px);
+  }
 }
 /*==================================
 =            RESPONSIVE            =
@@ -104,49 +139,53 @@ html {
 /*==========================================
 =            BANDEROLE           =
 ==========================================*/
-.col-size {
-  width: 300;
-  height: 90px;
-  padding: 0 0 0 0 !important;
-  background: black;
-  border-top: 2px solid rgba(186, 186, 186, 0.314);
-  border-bottom: 2px solid rgba(186, 186, 186, 0.314);
-  position: relative;
-}
-.col-size-2 {
-  width: 300px;
-  height: 88px;
-  padding: 0 0 0s 0 !important;
-  background: black;
-  border-right: 2px solid rgba(186, 186, 186, 0.314);
-  border-bottom: 2px solid rgba(186, 186, 186, 0.314);
-}
-.col-size-2 p {
-  position: absolute !important;
-  top: 0;
-  bottom: 0;
-  right: 300;
-  left: 0;
-  display: flex;
+.marquee {
+  width: 100%;
+  padding: 10px 10px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   text-align: center;
-  align-items: center;
-  font-size: 30px;
-  color: #fff;
+  overflow: hidden;
 }
-.marque {
-  position: absolute !important;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 300px;
-  display: flex;
-  font-size: 50px;
-  color: #fff;
-  -webkit-text-stroke: 4px white;
-}
-.marque-content {
+
+.marquee h3 {
+  font-size: 94px;
+  font-weight: 700;
   text-transform: uppercase;
-  text-transform: color 0.2s;
+}
+
+.marquee .marquee-wrapper {
+  width: 100000px;
+  animation: marqueeAnimation 38s linear 0s infinite running;
+}
+
+.marquee h3 .marquee-title {
+  margin-right: 20px;
+  float: left;
+}
+
+.text-stroke-black {
+  color: transparent;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000000;
+}
+
+@keyframes marqueeAnimation {
+  100% {
+    transform: translateX(-4600px);
+  }
+}
+
+@media (max-width: 992px) {
+  .marquee h3 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 549px) {
+  .marquee h3 {
+    font-size: 50px;
+  }
 }
 /*==========================================
 =            FOOTER          =

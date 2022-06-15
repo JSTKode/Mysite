@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.min.css">
+        <link rel="stylesheet" href="scss/style.scss">
+        <script type="text/javascript" src="js/script.js"></script>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -28,13 +30,13 @@
                         <a class="decoration white padding paddingl" href="#">Accueil</a>
                     </div>
                     <div class=""> 
-                         <a class="decoration white padding" href="#">Parlmarès</a>
+                         <a class="decoration white padding" href="#">Palmarès</a>
                     </div>
                     <div class=""> 
                         <a class="decoration white padding" href="#">Shop</a>
                     </div>
                     <div class=""> 
-                        <a class="decoration white padding" href="#">Cyrpto</a>
+                        <a class="decoration white padding" href="#">Crytpo</a>
                     </div>
                     <div class=""> 
                         <a class="decoration white padding" href="#">NFT</a>
@@ -58,57 +60,51 @@
         <!-- ==========================================
             Bande annonce
         ========================================== -->
-        <div class="col-sizeB">
+        <div class="col-sizeB ">
             <video controls class="bd flexc" height="auto" width="50%">
                 <source src="images/Ma vidéo.mp4" type="vidéo/mp4">
                 <source src="images/Ma vidéo.webm" type="video/webm">
             </video>
+            <div id="preloader">
+                <div class="wavy">
+                  <span style="--index: 1">ON</span>
+                  <span style="--index: 2">V</span>
+                  <span style="--index: 3">E</span>
+                  <span style="--index: 4">R</span>
+                  <span style="--index: 5">R</span>
+                  <span style="--index: 6">A</span>
+                  <span style="--index: 7"></span>
+                  <span style="--index: 8">.</span>
+                  <span style="--index: 9">.</span>
+                  <span style="--index: 10">.</span>
+                </div>
+              </div>
         </div>
         <!-- ==========================================
             BARRE ACTU
             ========================================== -->
-            <div class="col-size">
-                <div class="col-size-2">
-                    <div class="">
-                        <p>SIGNED</p>
+            <div class="marquee">
+                <h3>
+                  <div class="marquee-wrapper">
+                    <div class="marquee-title">
+                      / Good Day <span class="text-stroke-black">USER</span>
+                      &amp; Hello
+                      <span class="text-stroke-black">world</span> / Good Day
+                      <span class="text-stroke-black">USER</span>
+                      &amp; Hello
+                      <span class="text-stroke-black">world</span>
                     </div>
-                    <div class="marque">
-                        <di class="marque-contenant flexc">
-                            <marquee loop="0" scrollamount="10">VERY GOOD DAY VERY GOOD DAY VERY GOOD DAY VERY GOOD DAY VERY GOOD DAY VERY GOOD DAY VERY GOOD DAY VERY GOOD DAY VERY GOOD DAY VERY GOOD DAY </marquee>
-                        </di>
+                    <div class="marquee-title">
+                      / Good Day <span class="text-stroke-black">world</span>
+                      &amp; Hello
+                      <span class="text-stroke-black">world</span> / Good Day
+                      <span class="text-stroke-black">world</span>
+                      &amp; Hello
+                      <span class="text-stroke-black">world</span>
                     </div>
-                </div>
+                  </div>
+                </h3>
               </div>
-        <!-- ==========================================
-            Kouros
-        ========================================== -->
-        <!-- <div class="background-color">
-            <div class="placementvideo">
-                <iframe width="320" height="200" 
-                src="https://www.youtube.com/embed/9b8b8D_Qwvk" 
-                title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>  -->
-            <!-- ==========================================
-            BARRE ACTU
-            ========================================== -->
-            <div class="col-size">
-                <div class="col-size-2">
-                    <div class="">
-                        <p>SIGNED</p>
-                    </div>
-                    <div class="marque">
-                        <di class="marque-contenant flexc">
-                            <marquee loop="0" scrollamount="10">NIQUE</marquee>
-                        </di>
-                    </div>
-                </div>
-              </div>
-
-
-
         <!-- ==========================================
             FOOTER
             ========================================== -->

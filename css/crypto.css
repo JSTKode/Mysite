@@ -1,0 +1,72 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: aktiv-grotesk, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+.flexc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flexg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flexd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.flexbtw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.display {
+  display: flex;
+  align-items: center;
+}
+.black {
+  color: black;
+}
+.white {
+  color: white;
+}
+.bgblack {
+  background-color: black;
+}
+.bgwhite {
+  background-color: white;
+}
+.decoration {
+  text-decoration: none;
+}
+.padding {
+  padding-right: 10px;
+}
+.paddingl {
+  padding-left: 10px;
+}
+.curser {
+  cursor: pointer;
+}
+/*==========================================
+=            NAVBAR            =
+==========================================*/
+.colsizeh {
+  width: 300;
+  height: 70px;
+  padding: 0 0 0 0 !important;
+  background: black;
+  border-bottom: 2px solid rgba(186, 186, 186, 0.314);
+  position: relative;
+}
